@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"C:/Users/Eyüp/AppData/Local/Programs/Python/Python313/python.exe\" -c \":*)",
+      "Bash(python -c \"import py_compile; py_compile.compile\\(''app.py'', doraise=True\\); print\\(''OK: app.py syntax hatasiz''\\)\")",
+      "Bash(python -c \"import py_compile; py_compile.compile\\(''app.py'', doraise=True\\); print\\(''OK''\\)\")",
+      "Read(//c/Windows/Microsoft.NET/Framework64/v4.0.30319/**)",
+      "Bash(\"C:/Windows/Microsoft.NET/Framework64/v4.0.30319/csc.exe\" /target:winexe /reference:System.Windows.Forms.dll /out:\"C:/Users/Eyüp/Desktop/youtube/YouTube AI Studio.exe\" \"C:/Users/Eyüp/Desktop/youtube/launcher.cs\")",
+      "Bash(grep -E \"\\\\.\\(exe|bat|py|md\\)$\")",
+      "Bash(ls \"/c/Users/Eyüp/Desktop/youtube/\"*.exe \"/c/Users/Eyüp/Desktop/youtube/\"*.vbs)",
+      "Read(//c/Users/Eyüp/Desktop/youtube/$LOCALAPPDATA/Programs/Python/Python313/**)",
+      "Bash(python -c \"import py_compile; py_compile.compile\\(''C:/Users/Eyüp/Desktop/youtube/studio.py'', doraise=True\\); print\\(''OK''\\)\")",
+      "Bash(python -c \"import py_compile; py_compile.compile\\(''C:/Users/Eyüp/Desktop/youtube/studio.py'', doraise=True\\); print\\(''studio.py OK''\\)\")",
+      "Bash(python -c \"import py_compile; py_compile.compile\\(''C:/Users/Eyüp/Desktop/youtube/app.py'', doraise=True\\); print\\(''app.py OK''\\)\")",
+      "Bash(python studio.py)",
+      "Bash(cmd.exe //c \"Kur_ve_Baslat.bat\")",
+      "Bash(cmd.exe //c \"C:\\\\Users\\\\Eyüp\\\\Desktop\\\\youtube\\\\Kur_ve_Baslat.bat\")",
+      "Bash(python -c \":*)",
+      "Bash(timeout 8 python -c \":*)",
+      "Bash(echo \"Exit code: $?\")",
+      "Read(//c/Users/Eyüp/Desktop/youtube-ai-studio/$LOCALAPPDATA/**)",
+      "Read(//c/Users/Eyüp/Desktop/youtube-ai-studio/$LOCALAPPDATA/piper_data/**)",
+      "Bash(\"/c/Program Files \\(x86\\)/Inno Setup 6/ISCC.exe\" installer.iss)",
+      "Read(//c/ProgramData/piper_data/**)",
+      "Read(//c/Program Files/VoiceReel/**)",
+      "Bash(reg query:*)",
+      "Bash(find /c/Users/Eyüp/Desktop/VoiceReel -type d -not -path */dist/* -not -path */build/* -not -path */__pycache__/*)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Eyüp\\Desktop\\youtube"
+    ]
+  }
+}

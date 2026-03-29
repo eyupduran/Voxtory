@@ -1,0 +1,2342 @@
+{
+  "meta": {
+    "baslik": "bolum1",
+    "cozunurluk": {
+      "h": 1080,
+      "w": 1920
+    },
+    "fps": 25,
+    "guncelleme": "2026-03-29T21:01:02.204Z",
+    "olusturma": "2026-03-29T20:32:44.583Z"
+  },
+  "tracks": [
+    {
+      "clips": [
+        {
+          "animation": {
+            "enter": "bounceIn",
+            "enterDuration": 0.6,
+            "exit": "fadeOut",
+            "exitDuration": 0.3
+          },
+          "duration": 3.3,
+          "id": "clip-0432",
+          "position": {
+            "x": 0.10084493550860857,
+            "y": 0.23504998116399084
+          },
+          "startTime": 0,
+          "style": {
+            "align": "center",
+            "backgroundColor": "rgba(239,68,68,0.9)",
+            "bold": true,
+            "borderRadius": 16,
+            "color": "#FFFFFF",
+            "font": "Segoe UI",
+            "italic": false,
+            "letterSpacing": 2,
+            "lineHeight": 1.4,
+            "maxWidth": 0.8,
+            "outlineColor": "#000000",
+            "outlineWidth": 0,
+            "padding": 20,
+            "size": 24
+          },
+          "text": "ABONE OL",
+          "type": "text"
+        }
+      ],
+      "id": "text-1-1774816852918",
+      "label": "text 1",
+      "type": "text"
+    },
+    {
+      "clips": [
+        {
+          "duration": 70,
+          "effects": {
+            "blur": 0,
+            "brightness": 0,
+            "contrast": 0,
+            "filter": "none",
+            "fitMode": "fill",
+            "grain": 0,
+            "kenBurns": {
+              "enabled": true,
+              "endScale": 1.3,
+              "endX": 0.5,
+              "endY": 0.5,
+              "startScale": 1,
+              "startX": 0.5,
+              "startY": 0.5
+            },
+            "saturation": 0,
+            "sharpen": 0,
+            "temperature": 0,
+            "tint": 0,
+            "vignette": 0
+          },
+          "id": "clip-0001",
+          "source": "gorsel_20260328_140851_01.png",
+          "startTime": 0,
+          "transition": {
+            "duration": 0.5,
+            "type": "none"
+          },
+          "type": "image"
+        },
+        {
+          "duration": 70,
+          "effects": {
+            "blur": 0,
+            "brightness": 0,
+            "contrast": 0,
+            "filter": "none",
+            "fitMode": "fill",
+            "grain": 0,
+            "kenBurns": {
+              "enabled": true,
+              "endScale": 1.3,
+              "endX": 0.5,
+              "endY": 0.5,
+              "startScale": 1,
+              "startX": 0.5,
+              "startY": 0.5
+            },
+            "saturation": 0,
+            "sharpen": 0,
+            "temperature": 0,
+            "tint": 0,
+            "vignette": 0
+          },
+          "id": "clip-0002",
+          "source": "gorsel_20260328_140851_02.png",
+          "startTime": 70,
+          "transition": {
+            "duration": 0.5,
+            "type": "none"
+          },
+          "type": "image"
+        },
+        {
+          "duration": 70,
+          "effects": {
+            "blur": 0,
+            "brightness": 0,
+            "contrast": 0,
+            "filter": "none",
+            "fitMode": "fill",
+            "grain": 0,
+            "kenBurns": {
+              "enabled": true,
+              "endScale": 1.3,
+              "endX": 0.5,
+              "endY": 0.5,
+              "startScale": 1,
+              "startX": 0.5,
+              "startY": 0.5
+            },
+            "saturation": 0,
+            "sharpen": 0,
+            "temperature": 0,
+            "tint": 0,
+            "vignette": 0
+          },
+          "id": "clip-0003",
+          "source": "gorsel_20260328_140851_03.png",
+          "startTime": 140,
+          "transition": {
+            "duration": 0.5,
+            "type": "none"
+          },
+          "type": "image"
+        },
+        {
+          "duration": 140.68,
+          "effects": {
+            "blur": 0,
+            "brightness": 0,
+            "contrast": 0,
+            "filter": "none",
+            "fitMode": "fill",
+            "grain": 0,
+            "kenBurns": {
+              "enabled": true,
+              "endScale": 1.3,
+              "endX": 0.5,
+              "endY": 0.5,
+              "startScale": 1,
+              "startX": 0.5,
+              "startY": 0.5
+            },
+            "saturation": 0,
+            "sharpen": 0,
+            "temperature": 0,
+            "tint": 0,
+            "vignette": 0
+          },
+          "id": "clip-0005",
+          "source": "gorsel_20260328_140851_04.png",
+          "startTime": 210,
+          "transition": {
+            "duration": 0.5,
+            "type": "none"
+          },
+          "type": "image"
+        }
+      ],
+      "id": "video-track",
+      "label": "Görsel",
+      "type": "video"
+    },
+    {
+      "clips": [
+        {
+          "duration": 350.68,
+          "fadeIn": 0,
+          "fadeOut": 0.5,
+          "id": "clip-0006",
+          "pitch": 0,
+          "source": "bolum1.mp3",
+          "speed": 1,
+          "startTime": 0,
+          "trimEnd": 350.68,
+          "trimStart": 0,
+          "type": "audio",
+          "volume": 1
+        }
+      ],
+      "id": "audio-track",
+      "label": "Ses",
+      "type": "audio"
+    },
+    {
+      "clips": [
+        {
+          "duration": 1.751,
+          "id": "clip-0325",
+          "startTime": 0,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Karanlık bir geceydi.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.8060000000000005,
+          "id": "clip-0326",
+          "startTime": 1.751,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "İstanbul'un dar sokaklarında yalnız bir adam yürüyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.190999999999999,
+          "id": "clip-0327",
+          "startTime": 5.557,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Adı Kemal'di ve elli yılını bu şehirde geçirmişti.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.896000000000001,
+          "id": "clip-0328",
+          "startTime": 8.748,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Ama bu gece, her şey farklıydı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.441000000000001,
+          "id": "clip-0329",
+          "startTime": 11.644,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Cebindeki mektup, hayatını değiştirecek bir sır taşıyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 5.658999999999999,
+          "id": "clip-0330",
+          "startTime": 16.085,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Mektubu bir hafta önce, ölen babasının eski ceketinin iç cebinde bulmuştu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 5.00825,
+          "id": "clip-0331",
+          "startTime": 21.744,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Sararmış kağıdın üzerinde titrek bir el yazısıyla şunlar yazılıydı:",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.3637499999999996,
+          "id": "clip-0332",
+          "startTime": 26.75225,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "\"Eğer bunu okuyorsan, zamanı gelmiş demektir.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.8770000000000024,
+          "id": "clip-0333",
+          "startTime": 30.116,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Kadıköy'deki eski balıkçı barınağına git.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 1.7356638655462149,
+          "id": "clip-0334",
+          "startTime": 32.993,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Üçüncü teknenin altında,",
+          "type": "subtitle"
+        },
+        {
+          "duration": 6.87033613445378,
+          "id": "clip-0335",
+          "startTime": 34.72866386554622,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "seni bekleyen bir kutu var.\"\n\nKemal o geceye kadar babasını sıradan bir terzi olarak tanımıştı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.594000000000001,
+          "id": "clip-0336",
+          "startTime": 41.599,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Sabahları erken kalkar, akşamları geç döner,",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.594000000000001,
+          "id": "clip-0337",
+          "startTime": 45.193,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "cumartesi günleri kahvehanede tavla oynardı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.283999999999999,
+          "id": "clip-0338",
+          "startTime": 48.787,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Ne bir gizemi vardı ne de sıra dışı bir yaşamı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.169000000000004,
+          "id": "clip-0339",
+          "startTime": 52.071,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Ya da Kemal öyle sanıyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.4809999999999945,
+          "id": "clip-0340",
+          "startTime": 54.24,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Mektubu okuduktan sonra günlerce uyuyamamıştı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.784000000000006,
+          "id": "clip-0341",
+          "startTime": 57.721,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Her gece tavana bakarak düşünmüştü.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.8659999999999997,
+          "id": "clip-0342",
+          "startTime": 60.505,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Babası neden böyle bir mektup yazmıştı?",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.1679999999999993,
+          "id": "clip-0343",
+          "startTime": 63.371,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "O kutunun içinde ne olabilirdi?",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.575000000000003,
+          "id": "clip-0344",
+          "startTime": 66.539,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Ve neden bunu kimseye söylememişti?",
+          "type": "subtitle"
+        },
+        {
+          "duration": 1.6589999999999918,
+          "id": "clip-0345",
+          "startTime": 69.114,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Sonunda dayanamadı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.906000000000006,
+          "id": "clip-0346",
+          "startTime": 70.773,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "O gece, saat gece yarısını geçerken evden çıktı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.355000000000004,
+          "id": "clip-0347",
+          "startTime": 74.679,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Kadıköy'e doğru yürümeye başladı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 1.634999999999991,
+          "id": "clip-0348",
+          "startTime": 77.034,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Sokaklar ıssızdı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 5.0020000000000095,
+          "id": "clip-0349",
+          "startTime": 78.669,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Sadece uzaktan gelen bir kedi miyavlaması ve rüzgarın ıslığı duyuluyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.492999999999995,
+          "id": "clip-0350",
+          "startTime": 83.671,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Balıkçı barınağına vardığında saat bire yaklaşıyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 5.450000000000003,
+          "id": "clip-0351",
+          "startTime": 87.164,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Eski ahşap iskelenin gıcırtısı, denizin karanlık sularına karışıyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.215999999999994,
+          "id": "clip-0352",
+          "startTime": 92.614,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Tekneler yan yana dizilmişti.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.2680000000000007,
+          "id": "clip-0353",
+          "startTime": 94.83,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Birinci, ikinci ve üçüncü tekneyi saydı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.034000000000006,
+          "id": "clip-0354",
+          "startTime": 98.098,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Üçüncü tekne, diğerlerinden daha eski ve bakımsızdı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.185999999999993,
+          "id": "clip-0355",
+          "startTime": 102.132,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Boyası dökülmüş, ismi silinmişti.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.296999999999997,
+          "id": "clip-0356",
+          "startTime": 105.318,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Kemal teknenin altına eğildi.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.2620000000000005,
+          "id": "clip-0357",
+          "startTime": 107.615,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Elini kumun içine daldırdı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.575000000000003,
+          "id": "clip-0358",
+          "startTime": 109.877,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Parmakları sert bir yüzeye değdi.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.5060000000000002,
+          "id": "clip-0359",
+          "startTime": 112.452,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Kalbi hızla çarpmaya başladı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.197000000000003,
+          "id": "clip-0360",
+          "startTime": 114.958,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Kutuyu çıkardığında, paslı bir metal kutu gördü.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.0859999999999985,
+          "id": "clip-0361",
+          "startTime": 119.155,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Kilidi yoktu ama kapağı sıkıca kapalıydı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.2620000000000005,
+          "id": "clip-0362",
+          "startTime": 122.241,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Titreyen elleriyle kutuyu açtı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 1.8910000000000053,
+          "id": "clip-0363",
+          "startTime": 124.503,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "İçinde üç şey vardı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.0929999999999893,
+          "id": "clip-0364",
+          "startTime": 126.394,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Birincisi, eski bir fotoğraftı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 6.00800000000001,
+          "id": "clip-0365",
+          "startTime": 129.487,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Fotoğrafta babası genç bir adamken, tanımadığı bir kadınla birlikte gülüyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.483000000000004,
+          "id": "clip-0366",
+          "startTime": 135.495,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Arkalarında büyük bir gemi vardı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.2789999999999964,
+          "id": "clip-0367",
+          "startTime": 137.978,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "İkincisi, küçük altın bir anahtardı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.109999999999985,
+          "id": "clip-0368",
+          "startTime": 141.257,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Üçüncüsü ise katlanmış bir haritaydı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.842000000000013,
+          "id": "clip-0369",
+          "startTime": 144.367,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Haritayı açtığında gözlerine inanamadı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.423000000000002,
+          "id": "clip-0370",
+          "startTime": 147.209,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Karadeniz kıyısında bir noktayı işaret ediyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.406000000000006,
+          "id": "clip-0371",
+          "startTime": 150.632,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Trabzon yakınlarında, dağların arasında küçük bir köy.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.140554216867457,
+          "id": "clip-0372",
+          "startTime": 155.038,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Haritanın kenarında babasının el yazısıyla bir not daha vardı:",
+          "type": "subtitle"
+        },
+        {
+          "duration": 1.4024457831325208,
+          "id": "clip-0373",
+          "startTime": 159.17855421686747,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "\"Annen burada büyüdü.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.3200000000000216,
+          "id": "clip-0374",
+          "startTime": 160.581,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Ailesi hâlâ orada yaşıyor.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.9679999999999893,
+          "id": "clip-0375",
+          "startTime": 162.901,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Onları bul.\"\n\nKemal şok olmuştu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.524000000000001,
+          "id": "clip-0376",
+          "startTime": 165.869,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Annesi, o daha bebekken vefat etmişti.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.4110000000000014,
+          "id": "clip-0377",
+          "startTime": 169.393,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Babası annesinden neredeyse hiç bahsetmemişti.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.177999999999997,
+          "id": "clip-0378",
+          "startTime": 172.804,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Sadece güzel bir kadın olduğunu ve onu çok sevdiğini söylerdi.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.844285714285718,
+          "id": "clip-0379",
+          "startTime": 176.982,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Şimdi ise annesinin bir ailesi olduğunu,",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.1287142857142953,
+          "id": "clip-0380",
+          "startTime": 179.82628571428572,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "hem de hâlâ hayatta olduklarını öğreniyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.0120000000000005,
+          "id": "clip-0381",
+          "startTime": 182.955,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Ertesi sabah, Kemal bir karar verdi.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 1.8789999999999907,
+          "id": "clip-0382",
+          "startTime": 185.967,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Trabzon'a gidecekti.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.6200000000000045,
+          "id": "clip-0383",
+          "startTime": 187.846,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Elli yıldır bilmediği bir aileyi bulacaktı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.7479999999999905,
+          "id": "clip-0384",
+          "startTime": 191.466,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Altın anahtarın neyin kapısını açtığını keşfedecekti.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.6920000000000073,
+          "id": "clip-0385",
+          "startTime": 195.214,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Otobüs bileti aldı ve yola çıktı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.274000000000001,
+          "id": "clip-0386",
+          "startTime": 197.906,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Yolculuk on iki saat sürdü.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.912000000000006,
+          "id": "clip-0387",
+          "startTime": 200.18,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Trabzon'a vardığında öğle vakti geçmişti.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.109999999999985,
+          "id": "clip-0388",
+          "startTime": 203.092,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Haritadaki köyü bulmak için bir taksi tuttu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.3300000000000125,
+          "id": "clip-0389",
+          "startTime": 206.202,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Şoför haritaya baktığında kaşlarını kaldırdı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 1.078000000000003,
+          "id": "clip-0390",
+          "startTime": 209.532,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "\"Orası mı?",
+          "type": "subtitle"
+        },
+        {
+          "duration": 1.6119999999999948,
+          "id": "clip-0391",
+          "startTime": 210.61,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Çok eski bir köy.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.330999999999989,
+          "id": "clip-0392",
+          "startTime": 212.222,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Yolu zor ama götürürüm\" dedi.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.959000000000003,
+          "id": "clip-0393",
+          "startTime": 214.553,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Dağ yollarından geçerek köye ulaştılar.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.359000000000009,
+          "id": "clip-0394",
+          "startTime": 217.512,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Küçük taş evler, yaşlı çınar ağaçları ve bir cami.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.329999999999984,
+          "id": "clip-0395",
+          "startTime": 221.871,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Köyün meydanında birkaç yaşlı adam oturuyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.365000000000009,
+          "id": "clip-0396",
+          "startTime": 225.201,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Kemal onlara yaklaştı ve fotoğrafı gösterdi.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.305000000000007,
+          "id": "clip-0397",
+          "startTime": 228.566,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "\"Bu kadını tanıyor musunuz?\" diye sordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.283999999999992,
+          "id": "clip-0398",
+          "startTime": 231.871,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Yaşlılardan biri fotoğrafa uzun uzun baktı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 1.5420000000000016,
+          "id": "clip-0399",
+          "startTime": 235.155,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Gözleri doldu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.4480000000000075,
+          "id": "clip-0400",
+          "startTime": 236.697,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "\"Bu Ayşe\" dedi titrek bir sesle.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 1.8100000000000023,
+          "id": "clip-0401",
+          "startTime": 239.145,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "\"Benim kız kardeşim.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.4359999999999786,
+          "id": "clip-0402",
+          "startTime": 240.955,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Elli yıl önce İstanbul'a gitti.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.478000000000009,
+          "id": "clip-0403",
+          "startTime": 243.391,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Bir daha haber alamadık.\"\n\nKemal'in dünyası bir anda değişti.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.348000000000013,
+          "id": "clip-0404",
+          "startTime": 247.869,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Karşısında duran yaşlı adam, dayısıydı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.9644137931034322,
+          "id": "clip-0405",
+          "startTime": 251.217,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Elli yıldır varlığından bile haberdar olmadığı bir aile,",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.194586206896531,
+          "id": "clip-0406",
+          "startTime": 255.18141379310345,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "bu küçük köyde onu bekliyormuş.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 5.218000000000018,
+          "id": "clip-0407",
+          "startTime": 257.376,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "O gün, Kemal hayatında ilk kez büyük bir aileye sahip olduğunu hissetti.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.6920000000000073,
+          "id": "clip-0408",
+          "startTime": 262.594,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Akşam yemeğinde on beş kişiydiler.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.673999999999978,
+          "id": "clip-0409",
+          "startTime": 265.286,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Herkes gülüyor, ağlıyor ve onu kucaklıyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.3140000000000214,
+          "id": "clip-0410",
+          "startTime": 268.96,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Dayısı, annesinin hikayesini anlattı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 5.1720000000000255,
+          "id": "clip-0411",
+          "startTime": 272.274,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Nasıl İstanbul'a gittiğini, bir terziyle evlendiğini ve bir oğlu olduğunu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.083999999999946,
+          "id": "clip-0412",
+          "startTime": 277.446,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Altın anahtar ise annesinin çeyiz sandığının anahtarıydı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.959000000000003,
+          "id": "clip-0413",
+          "startTime": 281.53,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Sandık hâlâ evin çatı katında duruyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.463999999999999,
+          "id": "clip-0414",
+          "startTime": 284.489,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Kemal anahtarı kilide soktuğunda, mükemmel bir şekilde döndü.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.446407079646008,
+          "id": "clip-0415",
+          "startTime": 288.953,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Sandığın içinde annesinin gelinliği,",
+          "type": "subtitle"
+        },
+        {
+          "duration": 5.232592920354023,
+          "id": "clip-0416",
+          "startTime": 291.399407079646,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "el yazısıyla yazılmış mektuplar ve küçük Kemal'e ait bebek kıyafetleri vardı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.9924301075269,
+          "id": "clip-0417",
+          "startTime": 296.632,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Mektuplardan birinde annesi şöyle yazmıştı:",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.47956989247308,
+          "id": "clip-0418",
+          "startTime": 299.6244301075269,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "\"Bir gün büyüyeceksin ve bu satırları okuyacaksın.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.390000000000043,
+          "id": "clip-0419",
+          "startTime": 303.104,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Bil ki seni dünyalar kadar sevdim.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.996999999999957,
+          "id": "clip-0420",
+          "startTime": 305.494,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Eğer bir gün köye gelirsen, çınar ağacının altında otur ve rüzgarı dinle.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 5.953000000000031,
+          "id": "clip-0421",
+          "startTime": 310.491,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Ben orada olacağım.\"\n\nKemal o akşam çınar ağacının altına oturdu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.3309999999999604,
+          "id": "clip-0422",
+          "startTime": 316.444,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Rüzgar hafifçe esiyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 1.9370000000000118,
+          "id": "clip-0423",
+          "startTime": 318.775,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Yapraklar hışırdıyordu.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 5.400000000000034,
+          "id": "clip-0424",
+          "startTime": 320.712,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Ve Kemal, elli yıl sonra ilk kez, annesinin yanında olduğunu hissetti.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 6.072999999999979,
+          "id": "clip-0425",
+          "startTime": 326.112,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Bu hikaye bize şunu öğretiyor: Hayatta bazı sırlar, doğru zamanda ortaya çıkar.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 3.1159999999999854,
+          "id": "clip-0426",
+          "startTime": 332.185,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Önemli olan, o zamanı kaçırmamaktır.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.359000000000037,
+          "id": "clip-0427",
+          "startTime": 335.301,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Kemal mektubu bulmasaydı, ailesini hiç tanıyamayacaktı.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.033999999999992,
+          "id": "clip-0428",
+          "startTime": 339.66,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Bazen bir adım atmak, tüm hayatınızı değiştirebilir.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 4.010999999999967,
+          "id": "clip-0429",
+          "startTime": 343.694,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Ve unutmayın, geçmişin kapıları her zaman açılabilir.",
+          "type": "subtitle"
+        },
+        {
+          "duration": 2.9700000000000273,
+          "id": "clip-0430",
+          "startTime": 347.705,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "Yeter ki anahtarı aramaya cesaret edin.",
+          "type": "subtitle"
+        }
+      ],
+      "id": "subtitle-track",
+      "label": "Altyazı",
+      "type": "subtitle"
+    }
+  ],
+  "version": 1
+}

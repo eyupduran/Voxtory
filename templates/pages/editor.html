@@ -1,0 +1,332 @@
+<!-- ═══ Video Editör Sayfası ═══════════════════ -->
+<div class="page" id="page-editor">
+
+    <!-- ─── Karşılama Ekranı ─────────────── -->
+    <div class="editor-welcome" id="editor-welcome">
+        <div class="welcome-inner">
+            <div class="welcome-header">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:48px;height:48px;color:var(--accent);"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/><polygon points="7 6 10 8 7 10 7 6" fill="currentColor" stroke="none"/></svg>
+                <h2>Video Editör</h2>
+                <p>Profesyonel videolar oluşturmak için bir proje seçin veya yeni proje başlatın.</p>
+            </div>
+
+            <div class="welcome-actions">
+                <div class="welcome-card" id="btn-new-project">
+                    <div class="welcome-card-icon" style="background:var(--accent-glow);color:var(--accent);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </div>
+                    <div class="welcome-card-text">
+                        <strong>Yeni Proje</strong>
+                        <span>Sıfırdan yeni bir video projesi oluşturun</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="welcome-projects-section" id="welcome-projects-section">
+                <h3>Kayıtlı Projeler</h3>
+                <div class="welcome-projects-list" id="welcome-projects-list">
+                    <div class="props-empty">Yükleniyor...</div>
+                </div>
+            </div>
+
+            <div class="welcome-videos-section">
+                <h3>Tamamlanmış Videolar</h3>
+                <div class="welcome-videos-list" id="welcome-videos-list">
+                    <div class="props-empty">Yükleniyor...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ─── Editör Arayüzü ───────────────── -->
+    <div class="editor-layout" id="editor-layout" style="display:none;">
+
+        <!-- ─── Toolbar ─────────────────────── -->
+        <div class="editor-toolbar">
+            <div class="toolbar-group">
+                <button class="toolbar-btn" id="btn-back-welcome" title="Projelere Dön">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                </button>
+                <span class="toolbar-title" id="editor-proje-adi">Yeni Proje</span>
+            </div>
+
+            <div class="toolbar-group">
+                <button class="toolbar-btn" id="btn-undo" title="Geri Al (Ctrl+Z)" disabled>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                </button>
+                <button class="toolbar-btn" id="btn-redo" title="Yinele (Ctrl+Y)" disabled>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.13-9.36L23 10"/></svg>
+                </button>
+            </div>
+
+            <div class="toolbar-group">
+                <button class="toolbar-btn" id="btn-delete-clip" title="Klibi Sil (Delete)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                </button>
+                <button class="toolbar-btn" id="btn-duplicate-clip" title="Klibi Kopyala (Ctrl+D)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+            </div>
+
+            <div class="toolbar-group" style="margin-left:auto;">
+                <span class="toolbar-render-status" id="toolbar-render-status"></span>
+                <span class="toolbar-save-status" id="toolbar-save-status"></span>
+            </div>
+
+            <div class="toolbar-group">
+                <div class="toolbar-time" id="editor-time-display">00:00.00</div>
+                <span class="toolbar-duration" id="editor-duration-display">/ 00:00</span>
+            </div>
+
+            <div class="toolbar-group">
+                <button class="toolbar-btn" id="btn-save-project" title="Projeyi Kaydet (Ctrl+S)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                </button>
+                <button class="toolbar-btn" id="btn-load-project" title="Proje Yükle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                </button>
+                <button class="btn btn-primary btn-sm" id="btn-export" style="margin-left:6px;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Dışa Aktar
+                </button>
+            </div>
+        </div>
+
+        <!-- ─── Medya Kütüphanesi (sol) ──────── -->
+        <div class="editor-media-panel">
+            <div class="media-tabs">
+                <button class="media-tab active" data-tab="images">Görseller</button>
+                <button class="media-tab" data-tab="audio">Ses</button>
+                <button class="media-tab" data-tab="text">Metin</button>
+                <button class="media-tab" data-tab="subtitles">Altyazı</button>
+            </div>
+
+            <!-- Görseller Tab -->
+            <div class="media-tab-content active" id="tab-images">
+                <div class="media-actions">
+                    <button class="media-upload-btn" id="btn-upload-image">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Görsel Yükle
+                    </button>
+                    <input type="file" id="image-upload-input" accept="image/*" multiple style="display:none;">
+                </div>
+                <div class="media-grid" id="media-images-grid"></div>
+            </div>
+
+            <!-- Ses Tab -->
+            <div class="media-tab-content" id="tab-audio">
+                <div id="media-audio-list"></div>
+            </div>
+
+            <!-- Metin Tab -->
+            <div class="media-tab-content" id="tab-text">
+                <div class="text-templates-grid" id="text-templates-grid">
+                    <button class="text-template-btn" data-template="baslik">
+                        <span class="text-tmpl-preview" style="font-size:16px;font-weight:bold;">BAŞLIK</span>
+                        <span class="text-tmpl-label">Başlık Kartı</span>
+                    </button>
+                    <button class="text-template-btn" data-template="altbaslik">
+                        <span class="text-tmpl-preview" style="font-size:11px;">Alt Başlık</span>
+                        <span class="text-tmpl-label">Alt Başlık</span>
+                    </button>
+                    <button class="text-template-btn" data-template="cta">
+                        <span class="text-tmpl-preview" style="font-size:13px;font-weight:bold;color:#ef4444;">ABONE OL</span>
+                        <span class="text-tmpl-label">CTA</span>
+                    </button>
+                    <button class="text-template-btn" data-template="alinti">
+                        <span class="text-tmpl-preview" style="font-size:11px;font-style:italic;">"Alıntı"</span>
+                        <span class="text-tmpl-label">Alıntı</span>
+                    </button>
+                    <button class="text-template-btn" data-template="bolum">
+                        <span class="text-tmpl-preview" style="font-size:11px;font-weight:bold;">Bölüm 1</span>
+                        <span class="text-tmpl-label">Bölüm Başlığı</span>
+                    </button>
+                    <button class="text-template-btn" data-template="sayac">
+                        <span class="text-tmpl-preview" style="font-size:22px;font-weight:bold;">01</span>
+                        <span class="text-tmpl-label">Sayaç</span>
+                    </button>
+                    <button class="text-template-btn" data-template="lokasyon">
+                        <span class="text-tmpl-preview" style="font-size:10px;">📍 İstanbul</span>
+                        <span class="text-tmpl-label">Lokasyon</span>
+                    </button>
+                </div>
+                <div style="margin-top:12px;">
+                    <button class="btn btn-primary btn-sm" id="btn-add-custom-text" style="width:100%;">Boş Metin Ekle</button>
+                </div>
+            </div>
+
+            <!-- Altyazı Tab -->
+            <div class="media-tab-content" id="tab-subtitles">
+                <div class="subtitle-add-area">
+                    <textarea class="subtitle-input" id="subtitle-text-input" placeholder="Altyazı metnini yazın..."></textarea>
+                    <div class="subtitle-btn-row">
+                        <button class="btn btn-primary btn-sm" id="btn-add-subtitle" style="flex:1;">Ekle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── Önizleme (merkez) ────────────── -->
+        <div class="editor-preview" id="editor-preview-area">
+            <div class="preview-canvas-wrap">
+                <canvas id="preview-canvas" width="960" height="540"></canvas>
+                <div class="preview-controls">
+                    <button class="preview-play-btn" id="btn-play-pause">
+                        <svg viewBox="0 0 24 24" fill="currentColor" id="play-icon"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    </button>
+                    <input type="range" class="preview-seek" id="preview-seek" min="0" max="100" step="0.1" value="0">
+                    <span class="preview-time-label" id="preview-time-label">00:00 / 00:00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── Özellikler Paneli (sağ) ───────── -->
+        <div class="editor-properties">
+            <div class="props-header">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                Özellikler
+            </div>
+            <div class="props-body" id="props-body">
+                <div class="props-empty">Düzenlemek için bir klip seçin</div>
+            </div>
+        </div>
+
+        <!-- ─── Zaman Çizelgesi (alt) ─────────── -->
+        <div class="editor-timeline">
+            <div class="timeline-toolbar">
+                <button class="toolbar-btn" id="btn-zoom-in" title="Yakınlaştır">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </button>
+                <input type="range" class="timeline-zoom-slider" id="timeline-zoom-slider" min="10" max="300" value="50">
+                <button class="toolbar-btn" id="btn-zoom-out" title="Uzaklaştır">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </button>
+                <span class="timeline-zoom-label" id="timeline-zoom-label">%100</span>
+
+                <button class="toolbar-btn" id="btn-fit-timeline" title="Tümüne Sığdır" style="margin-left:8px;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                </button>
+            </div>
+
+            <div class="timeline-body">
+                <div class="timeline-headers">
+                    <div class="timeline-header-ruler">
+                        <button class="track-add-btn" id="btn-add-track" title="Track Ekle">+</button>
+                    </div>
+                    <div id="timeline-track-headers">
+                        <!-- Dinamik olarak EditorTimeline._renderTrackHeaders() tarafından doldurulur -->
+                        <div class="timeline-track-header">
+                            <div class="track-color" style="background:#6366f1;"></div>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                            <span class="track-header-label">Görsel</span>
+                        </div>
+                        <div class="timeline-track-header">
+                            <div class="track-color" style="background:#22c55e;"></div>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                            <span class="track-header-label">Ses</span>
+                        </div>
+                        <div class="timeline-track-header">
+                            <div class="track-color" style="background:#f59e0b;"></div>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            <span class="track-header-label">Altyazı</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-canvas-wrap" id="timeline-canvas-wrap">
+                    <canvas id="timeline-canvas"></canvas>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Context Menu -->
+<div class="context-menu" id="editor-context-menu">
+    <button class="context-item" data-action="duplicate">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        Kopyala
+    </button>
+    <button class="context-item" data-action="split">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="2" x2="12" y2="22"/><polyline points="17 7 12 2 7 7"/><polyline points="17 17 12 22 7 17"/></svg>
+        Böl
+    </button>
+    <div class="context-sep"></div>
+    <button class="context-item danger" data-action="delete">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+        Sil
+    </button>
+</div>
+
+<!-- Export Dialog -->
+<div class="export-overlay" id="export-overlay">
+    <div class="export-dialog">
+        <div class="export-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Dışa Aktar
+        </div>
+
+        <div class="export-project-info" id="export-project-info"></div>
+
+        <div class="export-row">
+            <span class="export-label">Başlık</span>
+            <input type="text" class="export-input" id="export-filename" placeholder="video_adi">
+        </div>
+        <div class="export-row">
+            <span class="export-label">Çözünürlük</span>
+            <select class="export-select" id="export-resolution">
+                <option value="1920x1080">1920x1080 (Full HD)</option>
+                <option value="1280x720">1280x720 (HD)</option>
+                <option value="3840x2160">3840x2160 (4K)</option>
+            </select>
+        </div>
+        <div class="export-row">
+            <span class="export-label">Kalite</span>
+            <select class="export-select" id="export-quality">
+                <option value="normal">Normal (Önerilen)</option>
+                <option value="hizli">Hızlı</option>
+                <option value="yuksek">Yüksek Kalite</option>
+            </select>
+        </div>
+
+        <div class="export-progress" id="export-progress">
+            <div class="progress-bar-bg"><div class="progress-bar" id="export-progress-bar"></div></div>
+            <div class="progress-text">
+                <span id="export-progress-msg">Hazırlanıyor...</span>
+                <span id="export-progress-pct">%0</span>
+            </div>
+        </div>
+
+        <div class="export-actions" id="export-actions">
+            <button class="btn btn-secondary" id="btn-export-cancel">Vazgeç</button>
+            <button class="btn btn-primary" id="btn-export-start">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Başlat
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- New Project Dialog -->
+<div class="export-overlay" id="new-project-overlay">
+    <div class="export-dialog">
+        <div class="export-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Yeni Proje
+        </div>
+        <div class="export-row">
+            <span class="export-label">Proje Adı</span>
+            <input type="text" class="export-input" id="new-project-name" placeholder="Projenize bir isim verin...">
+        </div>
+        <div class="export-actions">
+            <button class="btn btn-secondary" id="btn-new-project-cancel">Vazgeç</button>
+            <button class="btn btn-primary" id="btn-new-project-create">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Oluştur
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Drag preview element -->
+<div class="drag-preview" id="drag-preview" style="display:none;"></div>

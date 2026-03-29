@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voxtory</title>
+    <link rel="icon" href="/static/icon.ico">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/sidebar.css">
+    <link rel="stylesheet" href="/static/css/components.css">
+    <link rel="stylesheet" href="/static/css/pages.css">
+    <link rel="stylesheet" href="/static/css/editor.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash" id="splash">
+        <div class="splash-logo">Voxtory</div>
+        <div class="splash-spinner"></div>
+        <div class="splash-text">Sistem hazırlanıyor...</div>
+    </div>
+
+    <div class="app">
+        <!-- ─── Sidebar ──────────────────────────── -->
+        <nav class="sidebar">
+            <div class="sidebar-logo">
+                <h1>Voxtory</h1>
+                <span>Story & Video Creator</span>
+            </div>
+
+            <div class="nav-section">Üretim</div>
+
+            <div class="nav-item active" data-page="ses">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                <span>Ses Üretimi</span>
+            </div>
+
+            <div class="nav-item" data-page="editor">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/><polygon points="7 6 10 8 7 10 7 6" fill="currentColor" stroke="none"/></svg>
+                <span>Video Editör</span>
+            </div>
+
+            <div class="nav-section">Yönetim</div>
+
+            <div class="nav-item" data-page="arsiv">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8v13H3V8"/><path d="M1 3h22v5H1z"/><path d="M10 12h4"/></svg>
+                <span>Arşiv</span>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="sidebar-status" id="sidebar-status">
+                    <span class="status-dot" id="status-dot"></span>
+                    <span id="status-text">Kontrol ediliyor…</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ─── Main Content ─────────────────────── -->
+        <main class="main">
+            {% include 'pages/tts.html' %}
+
+            {% include 'pages/editor.html' %}
+            {% include 'pages/archive.html' %}
+        </main>
+    </div>
+
+    <!-- Bildirim Overlay -->
+    <div class="notify-overlay" id="notify-overlay">
+        <div class="notify-card" id="notify-card"></div>
+    </div>
+
+    <!-- Video Player Modal -->
+    <div class="video-player-overlay" id="video-player-overlay">
+        <div class="video-player-dialog">
+            <div class="video-player-header">
+                <span class="video-player-title" id="video-player-title"></span>
+                <button class="video-player-close" id="video-player-close">&times;</button>
+            </div>
+            <video id="video-player" controls preload="metadata">
+                Tarayıcınız video oynatmayı desteklemiyor.
+            </video>
+        </div>
+    </div>
+
+    <!-- Modüler JS dosyaları -->
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/tts.js"></script>
+    <script src="/static/js/editor/editor-core.js"></script>
+    <script src="/static/js/editor/editor-timeline.js"></script>
+    <script src="/static/js/editor/editor-preview.js"></script>
+    <script src="/static/js/editor/editor-panels.js"></script>
+    <script src="/static/js/editor/editor-export.js"></script>
+    <script src="/static/js/editor/editor-init.js"></script>
+</body>
+</html>

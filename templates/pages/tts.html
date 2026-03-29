@@ -1,0 +1,74 @@
+<!-- ═══ SES ÜRETİMİ ═══════════════════════ -->
+<div class="page active" id="page-ses">
+    <div class="page-header">
+        <h2>Ses Üretimi</h2>
+        <p>Türkçe metin gir, Piper TTS ile yüksek kaliteli ses dosyası üret.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Metin Girişi</span>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Başlık (opsiyonel)</label>
+            <input type="text" class="form-input" id="ses-baslik" placeholder="örnek: bolum_01_giris">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Ses Profili</label>
+            <div style="display:flex; gap:10px; align-items:center;">
+                <select class="form-input" id="ses-profil" style="flex:1;">
+                    <option value="anlatici">Yükleniyor...</option>
+                </select>
+                <button class="btn btn-secondary btn-sm" id="btn-onizleme" onclick="sesOnizleme()" style="white-space:nowrap;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    Önizle
+                </button>
+            </div>
+            <div class="char-count" id="profil-aciklama" style="text-align:left;">Doğal, sakin hikâye anlatıcısı</div>
+            <audio id="onizleme-audio" style="display:none;"></audio>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Hikâye Metni</label>
+            <textarea class="form-input" id="ses-metin"
+                      placeholder="Hikâye metnini buraya yaz veya yapıştır...&#10;&#10;Paragraflar arasında boş satır bırak. Her paragraf ayrı seslendirilerek birleştirilecek."></textarea>
+            <div class="char-count"><span id="char-count">0</span> karakter</div>
+        </div>
+
+        <div style="display:flex; gap:10px; align-items:center;">
+            <button class="btn btn-primary" id="btn-ses-uret" onclick="sesUret()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Ses Üret
+            </button>
+            <button class="btn btn-secondary" onclick="metniTemizle()">Temizle</button>
+        </div>
+
+        <div class="progress-container" id="ses-progress">
+            <div class="progress-bar-bg"><div class="progress-bar" id="progress-bar"></div></div>
+            <div class="progress-text">
+                <span id="progress-mesaj">Hazırlanıyor...</span>
+                <span id="progress-yuzde">0%</span>
+            </div>
+        </div>
+
+        <div class="audio-player" id="audio-player">
+            <div class="audio-player-label" id="audio-label">Son üretilen ses</div>
+            <audio controls id="audio-element"></audio>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Üretilen Ses Dosyaları</span>
+            <button class="btn btn-secondary btn-sm" onclick="sesKayitlariniYukle()">Yenile</button>
+        </div>
+        <div id="ses-listesi">
+            <div class="empty-state">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                <p>Henüz ses dosyası üretilmedi.</p>
+            </div>
+        </div>
+    </div>
+</div>

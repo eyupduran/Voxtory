@@ -1,0 +1,112 @@
+/* ─── Reset & Base ─────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
+    --bg-card: #16161f;
+    --bg-input: #1c1c28;
+    --bg-hover: #22222f;
+    --border: #2a2a3a;
+    --border-focus: #6366f1;
+    --text-primary: #e8e8ef;
+    --text-secondary: #8888a0;
+    --text-muted: #55556a;
+    --accent: #6366f1;
+    --accent-hover: #818cf8;
+    --accent-glow: rgba(99, 102, 241, 0.15);
+    --success: #22c55e;
+    --success-bg: rgba(34, 197, 94, 0.1);
+    --warning: #f59e0b;
+    --warning-bg: rgba(245, 158, 11, 0.1);
+    --danger: #ef4444;
+    --danger-bg: rgba(239, 68, 68, 0.1);
+    --gradient-1: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+    --gradient-2: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.5);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    line-height: 1.6;
+    user-select: none;
+}
+
+textarea, input, .file-name, .file-meta, .audio-player-label,
+.page-header p, .card-title, p {
+    user-select: text;
+}
+
+.gizli { display: none !important; }
+
+/* ─── Layout ───────────────────────────────── */
+.app { display: flex; min-height: 100vh; }
+
+.main {
+    flex: 1;
+    margin-left: 240px;
+    padding: 32px;
+    max-width: 1100px;
+}
+
+.page { display: none; }
+.page.active { display: block; }
+
+.main.editor-mode { max-width: none; padding: 0; overflow: hidden; height: 100vh; }
+.main.editor-mode .page.active { height: 100%; }
+
+.editor-mode-active .sidebar { display: none; }
+.editor-mode-active .main { margin-left: 0; }
+
+.page-header { margin-bottom: 28px; }
+.page-header h2 { font-size: 24px; font-weight: 700; letter-spacing: -0.5px; }
+.page-header p { color: var(--text-secondary); font-size: 14px; margin-top: 4px; }
+
+/* ─── Scrollbar ────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* ─── Splash Screen ────────────────────────── */
+.splash {
+    position: fixed; inset: 0;
+    background: var(--bg-primary);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.splash.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+.splash-logo {
+    font-size: 28px; font-weight: 800;
+    background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text; margin-bottom: 24px; letter-spacing: -0.5px;
+}
+.splash-spinner {
+    width: 36px; height: 36px;
+    border: 3px solid var(--border); border-top-color: var(--accent);
+    border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 16px;
+}
+.splash-text { font-size: 13px; color: var(--text-muted); }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.app { animation: fade-in 0.4s ease 0.2s both; }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+/* ─── Responsive ───────────────────────────── */
+@media (max-width: 768px) {
+    .sidebar { width: 60px; padding: 16px 0; }
+    .sidebar-logo h1, .sidebar-logo span, .nav-section,
+    .nav-item span, .nav-badge, .sidebar-status { display: none; }
+    .nav-item { justify-content: center; padding: 12px; border-left: none; }
+    .main { margin-left: 60px; padding: 20px; }
+}

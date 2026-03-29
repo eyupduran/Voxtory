@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "baslik": "bolum2",
+    "cozunurluk": {
+      "h": 1080,
+      "w": 1920
+    },
+    "fps": 25,
+    "guncelleme": "2026-03-29T21:21:46.596Z",
+    "olusturma": "2026-03-29T21:21:25.109Z"
+  },
+  "tracks": [
+    {
+      "clips": [
+        {
+          "duration": 1.74,
+          "effects": {
+            "blur": 0,
+            "brightness": 0,
+            "contrast": 0,
+            "filter": "none",
+            "fitMode": "fill",
+            "grain": 0,
+            "kenBurns": {
+              "enabled": true,
+              "endScale": 1.3,
+              "endX": 0.5,
+              "endY": 0.5,
+              "startScale": 1,
+              "startX": 0.5,
+              "startY": 0.5
+            },
+            "saturation": 0,
+            "sharpen": 0,
+            "temperature": 0,
+            "tint": 0,
+            "vignette": 0
+          },
+          "id": "clip-0001",
+          "source": "gorsel_20260328_140851_01.png",
+          "startTime": 0,
+          "transition": {
+            "duration": 0.5,
+            "type": "none"
+          },
+          "type": "image"
+        }
+      ],
+      "id": "video-track",
+      "label": "Görsel",
+      "type": "video"
+    },
+    {
+      "clips": [
+        {
+          "duration": 1.74,
+          "fadeIn": 0,
+          "fadeOut": 0.5,
+          "id": "clip-0002",
+          "pitch": 0,
+          "source": "bolum_2.mp3",
+          "speed": 1,
+          "startTime": 0,
+          "trimEnd": 1.74,
+          "trimStart": 0,
+          "type": "audio",
+          "volume": 1
+        }
+      ],
+      "id": "audio-track",
+      "label": "Ses",
+      "type": "audio"
+    },
+    {
+      "clips": [
+        {
+          "duration": 1.74,
+          "id": "clip-0003",
+          "startTime": 0,
+          "style": {
+            "animation": "typewriter",
+            "bold": true,
+            "color": "#ffffff",
+            "font": "Segoe UI",
+            "italic": false,
+            "outlineColor": "#000000",
+            "outlineWidth": 3,
+            "position": "bottom",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "size": 52
+          },
+          "text": "karanlık bir geceydi",
+          "type": "subtitle"
+        }
+      ],
+      "id": "subtitle-track",
+      "label": "Altyazı",
+      "type": "subtitle"
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,32 @@
+# Build çıktıları
+dist/
+build/
+Output/
+*.spec
+
+# Piper TTS engine (binary + model)
+tts/*.exe
+tts/*.dll
+tts/*.onnx
+tts/*.onnx.json
+tts/*.ort
+tts/espeak-ng-data/
+tts/pkgconfig/
+
+# Kullanıcı verileri
+tts/texts/
+tts/outputs/
+images/
+videos/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+hata_log.txt
+
+# IDE
+.vscode/
+.idea/

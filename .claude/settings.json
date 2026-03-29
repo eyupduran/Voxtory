@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ffmpeg -version)",
+      "Bash(winget install:*)",
+      "Bash(curl -sL \"https://api.github.com/repos/rhasspy/piper/releases/latest\")",
+      "Bash(curl -L \"https://github.com/rhasspy/piper/releases/download/2023.11.14-2/piper_windows_amd64.zip\" -o \"c:/Users/Eyüp/Desktop/youtube/tts/piper_windows_amd64.zip\")",
+      "Bash(curl -L \"https://huggingface.co/rhasspy/piper-voices/resolve/main/tr/tr_TR/dfki/medium/tr_TR-dfki-medium.onnx\" -o \"c:/Users/Eyüp/Desktop/youtube/tts/tr_TR-dfki-medium.onnx\")",
+      "Bash(curl -L \"https://huggingface.co/rhasspy/piper-voices/resolve/main/tr/tr_TR/dfki/medium/tr_TR-dfki-medium.onnx.json\" -o \"c:/Users/Eyüp/Desktop/youtube/tts/tr_TR-dfki-medium.onnx.json\")",
+      "Bash(python -c \":*)",
+      "Bash(cp -r piper/* .)",
+      "Bash(rm -rf piper piper_windows_amd64.zip)",
+      "Bash(./piper.exe --version)",
+      "Bash(./piper.exe --model tr_TR-dfki-medium.onnx --output_file ciktilar/test_kisa.wav)",
+      "Bash(./piper.exe --help)",
+      "Bash(./piper.exe --model tr_TR-dfki-medium.onnx --espeak_data \"c:/piper_data/espeak-ng-data\" --output_file ciktilar/test_kisa.wav)",
+      "Bash(python ses_uret.py)",
+      "Read(//c/Users/Eyüp/AppData/Local/Microsoft/WinGet/Links/**)",
+      "Bash(where.exe ffmpeg:*)",
+      "Bash(ls /c/ffmpeg*/bin/ffmpeg.exe)",
+      "Read(//c/Users/Eyüp/AppData/Local/**)",
+      "Bash(\"C:/Users/Eyüp/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1-full_build/bin/ffmpeg.exe\" -version)",
+      "Bash(pip install:*)",
+      "Bash(python -c \"import flask; print\\(flask.__version__\\)\")",
+      "Bash(pkill -f \"studio.py\")",
+      "Bash(pkill -f \"app.py\")",
+      "Bash(pkill -f \"python\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Read(//c/piper_data/espeak-ng-data/voices/!v/**)",
+      "Bash(curl -sL \"https://huggingface.co/rhasspy/piper-voices/tree/main/tr/tr_TR\")",
+      "Bash(curl -s http://localhost:5000/api/ses-profilleri)",
+      "Bash(\"C:/Users/Eyüp/AppData/Local/Programs/Python/Python313/python.exe\" -c \"import sys; sys.path.insert\\(0,''c:/Users/Eyüp/Desktop/youtube''\\); from app import app; print\\([r.rule for r in app.url_map.iter_rules\\(\\)]\\)\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{size_download}\" http://localhost:5050/api/ses-onizleme/anlatici)",
+      "Bash(\"C:/Users/Eyüp/AppData/Local/Programs/Python/Python313/python.exe\" -c \"import torch; print\\(torch.__version__, torch.cuda.is_available\\(\\)\\)\")",
+      "Bash(\"C:/Users/Eyüp/AppData/Local/Programs/Python/Python313/python.exe\" -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121 --quiet --disable-pip-version-check)",
+      "Bash(\"C:/Users/Eyüp/AppData/Local/Programs/Python/Python313/python.exe\" -c \"import torch; print\\(''PyTorch:'', torch.__version__\\); print\\(''CUDA:'', torch.cuda.is_available\\(\\)\\); print\\(''GPU:'', torch.cuda.get_device_name\\(0\\) if torch.cuda.is_available\\(\\) else ''Yok''\\)\")",
+      "Bash(\"C:/Users/Eyüp/AppData/Local/Programs/Python/Python313/python.exe\" -m pip uninstall torch torchvision torchaudio -y)",
+      "Bash(\"C:/Users/Eyüp/AppData/Local/Programs/Python/Python313/python.exe\" -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121 --disable-pip-version-check)",
+      "Bash(\"C:/Users/Eyüp/AppData/Local/Programs/Python/Python313/python.exe\" -m pip install torch --index-url https://download.pytorch.org/whl/cu124 --disable-pip-version-check)"
+    ]
+  }
+}

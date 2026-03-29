@@ -1,0 +1,154 @@
+<!-- ═══ VİDEO ÜRETİMİ ═════════════════════ -->
+<div class="page" id="page-video">
+    <div class="page-header">
+        <h2>Video Üretimi</h2>
+        <p>Görseller + ses dosyasını birleştirerek video oluştur.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><span class="card-title">Video Oluştur</span></div>
+
+        <div class="form-group">
+            <label class="form-label">Başlık (opsiyonel)</label>
+            <input type="text" class="form-input" id="video-baslik" placeholder="örnek: bolum_01">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Ses Dosyası</label>
+            <select class="form-input" id="video-ses"><option value="">Yükleniyor...</option></select>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Görseller</label>
+            <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+                <label class="btn btn-secondary btn-sm" style="cursor:pointer;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                    PC'den Yükle
+                    <input type="file" id="gorsel-dosya-sec" multiple accept="image/*" style="display:none;" onchange="gorselYukle(this)">
+                </label>
+                <button class="btn btn-secondary btn-sm" onclick="videoTumunuSec()">Tümünü Seç</button>
+                <button class="btn btn-secondary btn-sm" onclick="videoSecimTemizle()">Seçimi Temizle</button>
+            </div>
+            <div id="video-gorsel-grid" style="display:flex;flex-wrap:wrap;gap:8px;min-height:80px;padding:12px;background:var(--bg-input);border-radius:var(--radius-md);border:1px solid var(--border);">
+                <div style="color:var(--text-muted);font-size:13px;">Görselleri PC'den yükle veya images/ klasörüne at.</div>
+            </div>
+            <div class="char-count" id="video-gorsel-sayac">0 görsel seçildi</div>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Görsel Başına Süre</label>
+            <select class="form-input" id="video-sure-modu" style="width:220px;">
+                <option value="0">Otomatik (sese göre böl)</option>
+                <option value="5">5 saniye</option>
+                <option value="8">8 saniye</option>
+                <option value="10">10 saniye</option>
+                <option value="15">15 saniye</option>
+                <option value="20">20 saniye</option>
+                <option value="30">30 saniye</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Geçiş Efekti</label>
+            <select class="form-input" id="video-efekt" style="width:220px;">
+                <option value="fade">Fade Geçiş</option>
+                <option value="none">Efekt Yok (Düz Kesme)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Altyazı (opsiyonel)</label>
+            <div style="display:flex;gap:8px;margin-bottom:8px;">
+                <button class="btn btn-secondary btn-sm" id="btn-transkript" onclick="sestenAltyazi()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                    Sesten Otomatik Oluştur
+                </button>
+            </div>
+            <textarea class="form-input" id="video-altyazi" style="min-height:80px;"
+                      placeholder="Hikâye metnini yapıştır veya 'Sesten Otomatik Oluştur' butonuna bas.&#10;Boş bırakırsan altyazısız video oluşur."></textarea>
+            <div class="char-count" style="text-align:left;color:var(--text-muted);">Altyazı videoya gömülür + ayrı .srt dosyası da oluşur</div>
+
+            <div id="altyazi-stil-panel" style="margin-top:12px;padding:14px;background:var(--bg-input);border:1px solid var(--border);border-radius:var(--radius-sm);">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;cursor:pointer;" onclick="document.getElementById('altyazi-stil-detay').classList.toggle('gizli')">
+                    <span style="font-size:13px;font-weight:600;color:var(--text-secondary);">Altyazı Stil Ayarları</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:var(--text-muted);"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+                <div id="altyazi-stil-detay" class="gizli">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+                        <div>
+                            <label style="font-size:11px;color:var(--text-muted);display:block;margin-bottom:4px;">Font</label>
+                            <select class="form-input" id="altyazi-font" style="font-size:13px;">
+                                <option value="Segoe UI" selected>Segoe UI</option>
+                                <option value="Arial">Arial</option>
+                                <option value="Tahoma">Tahoma</option>
+                                <option value="Verdana">Verdana</option>
+                                <option value="Calibri">Calibri</option>
+                                <option value="Georgia">Georgia</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label style="font-size:11px;color:var(--text-muted);display:block;margin-bottom:4px;">Boyut</label>
+                            <select class="form-input" id="altyazi-boyut" style="font-size:13px;">
+                                <option value="36">Küçük</option>
+                                <option value="44">Normal</option>
+                                <option value="52" selected>Büyük (YouTube)</option>
+                                <option value="64">Çok Büyük</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label style="font-size:11px;color:var(--text-muted);display:block;margin-bottom:4px;">Konum</label>
+                            <select class="form-input" id="altyazi-konum" style="font-size:13px;">
+                                <option value="alt" selected>Alt (standart)</option>
+                                <option value="ust">Üst</option>
+                                <option value="orta">Orta</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label style="font-size:11px;color:var(--text-muted);display:block;margin-bottom:4px;">Kenar Kalınlığı</label>
+                            <select class="form-input" id="altyazi-kenar" style="font-size:13px;">
+                                <option value="2">İnce</option>
+                                <option value="3" selected>Normal</option>
+                                <option value="4">Kalın</option>
+                                <option value="5">Çok Kalın</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="margin-top:8px;">
+                        <label style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-secondary);cursor:pointer;">
+                            <input type="checkbox" id="altyazi-bold" checked style="accent-color:var(--accent);">
+                            Kalın yazı (Bold)
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display:flex;gap:10px;align-items:center;">
+            <button class="btn btn-primary" id="btn-video-uret" onclick="videoUret()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                Video Oluştur
+            </button>
+        </div>
+
+        <div class="progress-container" id="video-progress">
+            <div class="progress-bar-bg"><div class="progress-bar" id="video-progress-bar"></div></div>
+            <div class="progress-text">
+                <span id="video-progress-mesaj">Hazırlanıyor...</span>
+                <span id="video-progress-yuzde">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="margin-top:20px;">
+        <div class="card-header">
+            <span class="card-title">Üretilen Videolar</span>
+            <button class="btn btn-secondary btn-sm" onclick="videoListeYukle()">Yenile</button>
+        </div>
+        <div id="video-listesi">
+            <div class="empty-state">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                <p>Henüz video üretilmedi.</p>
+            </div>
+        </div>
+    </div>
+</div>
